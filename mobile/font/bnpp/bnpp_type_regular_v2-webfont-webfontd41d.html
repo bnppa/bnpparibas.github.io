@@ -1,0 +1,106 @@
+<html>
+  
+<!-- Mirrored from antilles-guyane.bnpparibas.net/part/fr/mobile/font/bnpp/bnpp_type_regular_v2-webfont-webfont.eot? by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Apr 2020 09:20:47 GMT -->
+<head></head>
+  <body>
+    <script src="mobile/js/categorizr-min.html"></script>
+    <script language="JavaScript">
+      var applicationStorage = "";
+      function detectmobile() {
+            if ((categorizr.isMobile || categorizr.isTablet) && navigator.userAgent.match(/((Android)|(webOS)|(iPhone)|(iPod)|(BlackBerry)|(Windows Phone)|(BB10)|(PlayBook))/i)) {
+              return ((window.screen.width <= 480) || (window.screen.height <= 480)); ;
+            }
+            else {
+              return false;
+            }
+      }
+      function doRedirect() {
+        // Navigation mobile (ex: portable, tablette)
+        var mobilePlatform = detectmobile();
+        // Cookie de navigation qui permet de savoir si l'utilisateur "mobile" est passé ou non sur le site standard
+        var mobileCookie   = "" == "O" ? true : false;
+        // Type d'affichage des erreurs (mobile ou standard)
+        var mobileError    = false;
+        // Qu'elle est l'erreur
+        var diag           = "IDPINC";
+        if (mobilePlatform) {
+          // Si le cookie de navigation mobile est positionné
+          // OU
+          // Qu'il s'agit d'une des erreurs suivantes 
+          if (mobileCookie || diag == "IDEINC" || diag == "PASSWO" || diag == "DIGIPA" || diag == "CLIINC" || diag == "IDECON" || diag == "ADMURL" || diag == "NOTAUT" || diag == "AUTBLO" || diag == "SERVIC") {
+            // Alors, qu'elle que soit la valeur du cookie, on affiche l'erreur au format mobile
+            mobileError = true;
+          }
+        }
+        if(mobileError) {
+          if ( "IDPINC" == "IDEINC" )
+            window.open("../../../dciwebf49a.html?p0=m_errcnx.tht&amp;t=p","_top");
+          else if ( "IDPINC" == "IDPDCX" )
+            window.open("../../../dciweb8bd0.html?p0=m_errdcx.tht&amp;t=p","_top");
+          else if ( "IDPINC" == "PASSWO" )
+            window.open("../../../dciwebf49a.html?p0=m_errcnx.tht&amp;t=p","_top");
+          else if ( "IDPINC" == "DIGIPA" )
+            window.open("../../../dciwebf49a.html?p0=m_errcnx.tht&amp;t=p","_top");
+          else if ( "IDPINC" == "CLIINC" )
+            window.open("../../../dciwebf49a.html?p0=m_errcnx.tht&amp;t=p","_top");
+          else if ( "IDPINC" == "IDECON" )
+            window.open("../../../dciwebf49a.html?p0=m_errcnx.tht&amp;t=p","_top");
+          else if ( "IDPINC" == "ADMURL" )
+            window.open("../../../dciwebf49a.html?p0=m_errcnx.tht&amp;t=p","_top");
+          else if ( "IDPINC" == "NOTAUT" )
+            window.open("../../../dciwebf49a.html?p0=m_errcnx.tht&amp;t=p","_top");
+          else if ( "IDPINC" == "AUTBLO" )
+            window.open("../../../dciweb3380.html?p0=m_errblo.tht&amp;t=p","_top");
+          else if ( "IDPINC" == "SERVIC" )
+            window.open("../../../dciweb8dcc.html?p0=m_errser.tht&amp;t=p","_top");
+          else 
+            window.open("../../../dciweb86ce.html?p0=m_error.tht&amp;t=p&amp;diag=IDPINC","_top");
+        }
+        else {
+          if ( "IDPINC" == "IDPINC" ) {
+              window.open("../../../idehom.html","_top");
+          }
+          else if ( "IDPINC" == "IDPDCX" )
+            window.open("../../../homedcx.html","_top");
+          else if ( "IDPINC" == "SERVIC" )
+            window.open("../../../homeind.html","_top");
+          else if ( "IDPINC" == "IDEINC" )
+            window.open("../../../homeerr.html","_top");
+          else if ( "IDPINC" == "PASSWO" )
+            window.open("../../../homeerr.html","_top");
+          /*
+          else if ( "IDP" == "PAS" )
+            window.open("https://antilles-guyane.bnpparibas.net/part/fr/erreur.html?dci=0&" + escape("IDPINC"),"_top");
+          */
+          else if ( "IDPINC" == "DIGIPA" )
+            window.open("../../../homeerr.html","_top");
+          else if ( "IDPINC" == "CLIINC" )
+            window.open("../../../homeerr.html","_top");
+          else if ( "IDPINC" == "IDECON" )
+            window.open("../../../homeerr.html","_top");
+          else if ( "IDPINC" == "ADMURL" )
+            window.open("../../../homeerr.html","_top");
+          else if ( "IDPINC" == "NOTAUT" )
+            window.open("../../../homeerr.html","_top");
+          else if ( "IDPINC" == "ABONNF" )
+            window.open("../../../homeblo.html","_top");
+          else if ( "IDPINC" == "MAXCON" )
+            window.open("../../../homemax.html","_top");
+          else if ( "IDPINC" == "AUTBLO" )
+            window.open("../../../homeblo.html","_top");
+          else if ( "IDPINC" == "CLODEP" )
+            window.open("../../../homeclo.html","_top");
+          else if ( "IDP" == "SEC" )
+            window.open("../../../erreur5d8b.html?dci=0&amp;" + escape("IDPINC"),"_top");
+          else
+            window.open("../../../homeinc.html","_top");
+        }
+      }
+    </script>
+<script language="JavaScript">
+  doRedirect();
+</script>
+  </body>
+
+<!-- Mirrored from antilles-guyane.bnpparibas.net/part/fr/mobile/font/bnpp/bnpp_type_regular_v2-webfont-webfont.eot? by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Apr 2020 09:20:47 GMT -->
+</html>

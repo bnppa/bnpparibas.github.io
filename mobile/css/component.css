@@ -1,0 +1,39 @@
+/* General styles for all menus */
+
+.cbp-spmenu {
+    background: #E8E8E8;
+    position: fixed;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+    width: 90px;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    border-right: 1px solid #1C5D5A;
+    //margin-top: 89px;
+}
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+    left: -91px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+    left: 0px;
+}
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+}
+
+.cbp-spmenu-push-toright {
+    left: 90px;
+}
